@@ -1,4 +1,3 @@
-# config/packages/security.yaml
 security:
     password_hashers:
         App\Entity\User: auto
