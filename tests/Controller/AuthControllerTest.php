@@ -38,6 +38,7 @@ class AuthControllerTest extends WebTestCase
     public function testLoginInvalidUsername(): void
     {
         $client = static::createClient();
+        $this->ensureTestUserExists();
 
         $client->request(
             'POST',
